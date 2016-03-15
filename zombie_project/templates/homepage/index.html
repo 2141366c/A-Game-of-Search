@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+	<head>
+		<title>Zombies!</title>
+	</head>
+	
+	<style>
+	p {
+		text-align: center;
+	}
+	</style>
+	
+	<body>
+		<h1 style="text-align:center;">Homepage</h1>
+		
+		<p><a href="/game/">Play</a></p>
+		<p><a href="/profiles/">Profiles</a></p>
+		<p><a href="/leaderboard/">Leaderboard</a></p>
+		<p><img src="{% static "images/crylaugh.png" %}" alt="CryLaugh" /></p>
+	</body>
+
+</html>

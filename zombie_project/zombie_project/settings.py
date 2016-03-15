@@ -23,6 +23,10 @@ SECRET_KEY = '=#)mivpim3=we)ddoak5rup6)-(%$&jn2zik0h%6lgw)&g6_4y'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+TEMPLATE_DIRS = (
+	TEMPLATE_PATH,
+)
 
 ALLOWED_HOSTS = []
 
@@ -40,6 +44,7 @@ INSTALLED_APPS = (
 	'leaderboard',
 	'homepage',
 	'game',
+	#'gravitar',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -83,5 +88,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
-
+STATIC_PATH = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+	STATIC_PATH,
+)
