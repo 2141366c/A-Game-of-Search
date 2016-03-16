@@ -10,4 +10,6 @@ urlpatterns = patterns('',
 	url(r'^homepage/', include('homepage.urls')),
 	url(r'^profiles/', include('profiles.urls')),
 	url(r'^leaderboard/', include('leaderboard.urls')),
+	url(r'^register/', include('register.urls')),
+
 )
