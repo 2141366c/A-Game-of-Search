@@ -7,6 +7,19 @@
 	
 	<body>
 		<h1 style="text-align:center;">Badges Page</h1>
+		
+		{% if badges %}
+		    <ul>
+			    {% for badge in badges %}
+				<li>{{ badges.survivor }}</li>
+				<li>{{ badges.killer }}</li>
+				<li>{{ badges.stamina }}</li>
+				<li>{{ badges.party}}}}</li>
+				{% endfor %}
+		    </ul>
+		{% else %}
+		    <strong>No badges achieved yet.</strong>
+		{% endif %}
 		<a href="/profiles/">Back</a></br>
 	</body>
 
