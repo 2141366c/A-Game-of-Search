@@ -1,19 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+	<h1 align="center">Leaderboard</h1>
+	<h3><a href="/homepage/">HomePage</a>
+  <meta charset="utf-8">
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Survivors</a></li>
+    <li><a href="#tabs-2">Killers</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>WINNERS that survive !</p>
+  </div>
+  <div id="tabs-2">
+    <p>Winners who kill zombies !</p>
+  </div>
+</div>
 
-	<head>
-		<title>Zombies!</title>
-	</head>
-	
-	<style>
-	p {
-		text-align: center;
-	}
-	</style>
-	
-	<body>
-		<h1 style="text-align:center;">Leaderboards</h1>
-
-	</body>
-
+ 
+</body>
 </html>
