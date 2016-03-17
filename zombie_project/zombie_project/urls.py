@@ -11,5 +11,6 @@ urlpatterns = patterns('',
 	url(r'^profiles/', include('profiles.urls')),
 	url(r'^leaderboard/', include('leaderboard.urls')),
 	url(r'^register/', include('register.urls')),
+	#ISSSUES HERE AND LINE ABOVE url(r'^login/register$', views.register, name='register'),
 
 )
