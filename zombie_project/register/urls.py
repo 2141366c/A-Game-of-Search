@@ -2,4 +2,4 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-	url(r'^$', views.index, name = 'registration_form')]
+	url(r'^$', views.index, name = 'login')]
