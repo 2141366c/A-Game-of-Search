@@ -2,10 +2,11 @@ from django.shortcuts import render
 from zombieGame.forms import UserForm, UserProfileForm
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
+from basicTest import multiplyBy2
 
 def index(request):
     context_dict = {'boldmessage': "zzzzz"}
-    return render(request, 'zombieGame/index.html', context_dict)
+    return render(request, 'zombieGame/base.html', context_dict)
 
 
 def login(request):
