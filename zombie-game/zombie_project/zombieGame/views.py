@@ -2,6 +2,10 @@ from django.shortcuts import render
 from zombieGame.forms import UserForm, UserProfileForm
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+
+from engine.main import show_game_screen
 
 def index(request):
     context_dict = {'boldmessage': "zzzzz"}
@@ -123,3 +127,8 @@ def user_login(request):
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
         return render(request, 'zombieGame/login.html', {})
+
+def main():
+     = show_game_screen(g)
+    response = render_to_response('zombieGame/game.html', {}, context)
+    return response
