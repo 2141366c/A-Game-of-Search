@@ -7,49 +7,62 @@
 <head>
   <meta charset="utf-8">
   <title>Zombies</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script>
-  $(function() {
-    $( "input[type=submit], a, button" )
-      .button()
-      .click(function( event ) {
-        event.preventDefault();
-      });
-  });
-  </script>
 </head>
 
 <style>
-    a {
-        position: fixed; left: 700px;
+    ul {
+        list-style-type: none;
+        width: 1320px;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
     }
-</style>
-<img src = "{% static "images/ZombieGameBanner.png" %}" alt = "Zombie Banner" align = "middle"/>
 
-<body background = "{% static "images/homepage.jpg" %}" align = "middle"/>
+    li {
+        float: left;
+    }
 
-<style>
-.center {
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: #333;
+    }
+
+    img.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .center {
     margin: auto;
     background-color: white;
-    height: 600px;
-    width: 800px;
+    height: 720px;
+    width: 1280px;
     border: 10px solid black;
     padding: 10px;
 }
+
 </style>
+<img class="displayed" src = "{% static "images/ZombieGameBanner.png" %}" alt = "Zombie Banner" />
+
+<body background = "{% static "images/homepage.jpg" %}" align = "middle"/>
 
 <body>
-    <div>
-    <a href="zombieGame/game/" >Play!</a>
-    <a href="zombieGame/profile/" >Profiles</a>
-    <a href="zombieGame/leaderboard/" >Leaderboards</a>
-    <a href="zombieGame/login/" >Logout</a>
+    <ul>
+    <li><a href="/zombieGame/game/" >Play!</a></li>
+    <li><a href="/zombieGame/profile/" >Profiles</a></li>
+    <li><a href="/zombieGame/leaderboard/" >Leaderboards</a></li>
+    <li><a href="/zombieGame/login/" >Logout</a></li>
 
-    </div>
+    </ul>
     <div class="center">
       <b>Testing</b>
     </div>
