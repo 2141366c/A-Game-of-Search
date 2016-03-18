@@ -2,86 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eae8d6fc-1b28-420f-838a-61ba52290afb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/.idea/zombie-game.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/zombie_project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zombie-game/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\engine\game.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\engine\house.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\engine\main.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\engine\streetfactory.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\game\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\game\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\game\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\game\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\game\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\game\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\gravatar\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\gravatar\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\gravatar\templatetags\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\gravatar\templatetags\gravatar.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\gravatar\templatetags\gravatar_tags.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\gravatar\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\homepage\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\leaderboard\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\manage.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\migrations\0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\migrations\0002_auto_20160317_0014.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\migrations\0003_auto_20160317_1535.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\profiles\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\register\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\static\images\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\static\images\ZombieGameBanner.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\static\images\crylaugh.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\static\images\homepage.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\static\js\jquery-1.12.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\base.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\homepage\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\leaderboards\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\profiles\badges.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\profiles\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\profiles\status.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\register\login_page.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\templates\register\registration_form.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\forms.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie_project\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie_project\settings.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie_project\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Em\code\Zombies\A-Game-of-Search\zombie_project\zombie_project\wsgi.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zombie-game/zombie_project/db.sqlite3" afterPath="$PROJECT_DIR$/zombie-game/zombie_project/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html" afterPath="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html" afterPath="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="A-Game-of-Search.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36225265">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -128,18 +52,18 @@
       <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.12937595">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -148,7 +72,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
@@ -158,8 +82,8 @@
       <file leaf-file-name="leaderboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state vertical-scroll-proportion="-0.29310346">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -194,8 +118,9 @@
         <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/index.html" />
         <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/register.html" />
         <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/login.html" />
-        <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html" />
         <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html" />
+        <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html" />
+        <option value="$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/game.html" />
       </list>
     </option>
   </component>
@@ -235,6 +160,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -267,10 +193,53 @@
               <option name="myItemId" value="zombie-game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="A-Game-of-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="A-Game-of-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombieGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="A-Game-of-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="A-Game-of-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,9 +453,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -526,6 +495,64 @@
     <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -533,7 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
@@ -541,24 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -571,21 +582,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html">
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/profile.html">
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/leaderboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36225265">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.29310346">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombie-game/zombie_project/templates/zombieGame/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12937595">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

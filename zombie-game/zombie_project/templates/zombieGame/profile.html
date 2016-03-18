@@ -13,8 +13,11 @@
         {% endif %}
 	
 	<body>
-
-		<a href="/zombieGame/">Play</a></br>
+	    {% if user.is_autheticated %}
+		<a href="/zombieGame/game/">Play</a></br>
+		{% else %}
+		<a href="/zombieGame/login/">Login</a></br>
+		{% endif %}
 		<a href="/zombieGame/leaderboard">Leaderboard</a></br>
 		<!--<a href="/profiles/badges/">Player Badges</a></br>
 		<a href="/profiles/status/">Player Status</a></br>-->
