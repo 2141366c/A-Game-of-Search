@@ -6,10 +6,11 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 
 from engine.main import show_game_screen
+from engine.game import Game
 
 def index(request):
     context_dict = {'boldmessage': "zzzzz"}
-    return render(request, 'zombieGame/index.html', context_dict)
+    return render(request, 'zombieGame/base.html', context_dict)
 
 
 def login(request):
@@ -21,8 +22,11 @@ def profile(request):
     return render(request, 'zombieGame/profile.html', context_dict)
 
 def game(request):
-    context_dict = {'boldmessage': "game"}
-    return render(request, 'zombieGame/game.html', context_dict)
+    g = Game()
+    g.start_new_day()
+    response = show_game_screen(g)
+    return render(response, 'zombieGame/game.html', context_dict)
+
 
 def leaderboard(request):
     context_dict = {'boldmessage': "leaderboard"}
@@ -128,7 +132,3 @@ def user_login(request):
         # blank dictionary object...
         return render(request, 'zombieGame/login.html', {})
 
-def main():
-     = show_game_screen(g)
-    response = render_to_response('zombieGame/game.html', {}, context)
-    return response

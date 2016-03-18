@@ -4,25 +4,68 @@
 
 <html>
 
-<img src = "{% static "images/ZombieGameBanner.png" %}" alt = "Zombie Banner" align = "middle"/>
-
-<body background = "{% static "images/homepage.jpg" %}" align = "middle"/>
+<head>
+  <meta charset="utf-8">
+  <title>Zombies</title>
+</head>
 
 <style>
-.center {
+    ul {
+        list-style-type: none;
+        width: 1320px;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: #333;
+    }
+
+    img.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .center {
     margin: auto;
     background-color: white;
-    height: 400px;
-    width: 800px;
+    height: 720px;
+    width: 1280px;
     border: 10px solid black;
     padding: 10px;
 }
+
 </style>
+<img class="displayed" src = "{% static "images/ZombieGameBanner.png" %}" alt = "Zombie Banner" />
+
+<body background = "{% static "images/homepage.jpg" %}" align = "middle"/>
 
 <body>
-<div class="center">
-  <b>Testing</b>
-</div>
+    <ul>
+    <li><a href="/zombieGame/game/" >Play!</a></li>
+    <li><a href="/zombieGame/profile/" >Profiles</a></li>
+    <li><a href="/zombieGame/leaderboard/" >Leaderboards</a></li>
+    <li><a href="/zombieGame/login/" >Logout</a></li>
+
+    </ul>
+    <div class="center">
+      <b>Testing</b>
+    </div>
 </body>
 
 </html>

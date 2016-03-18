@@ -9,5 +9,5 @@ urlpatterns = patterns('',
         url(r'^leaderboard/$', views.leaderboard, name='leaderboard'),
         url(r'^register/$', views.register, name='register'),
         url(r'^login/$', views.user_login, name='login'),
-        url(r'^game/$', views.main, name='game'),
+        url(r'^game/$', views.game, name='game'),
         )
