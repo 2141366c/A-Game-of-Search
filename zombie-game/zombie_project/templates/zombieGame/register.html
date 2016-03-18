@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+{% extends "zombieGame/base.html" %}
 <html>
     <head>
         <title>Register</title>
     </head>
+
+    {% block content %}
 
     <body>
         <h1>Register to play</h1>
@@ -29,4 +32,7 @@
         </form>
         {% endif %}
     </body>
+
+    {% endblock content %}
+
 </html>

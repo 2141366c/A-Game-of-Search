@@ -1,10 +1,13 @@
-
 <!DOCTYPE html>
+{% extends "zombieGame/base.html" %}
 <html>
 
 	<head>
 		<title>Profiles</title>
 	</head>
+
+	{% block content %}
+
         <h1 style="text-align:center;">Profiles Page</h1>
         {% if user.is_authenticated %}
         <h1>welcome back {{ user.username }}!</h1>
@@ -22,5 +25,7 @@
 		<!--<a href="/profiles/badges/">Player Badges</a></br>
 		<a href="/profiles/status/">Player Status</a></br>-->
 	</body>
+
+	{% endblock content %}
 
 </html>

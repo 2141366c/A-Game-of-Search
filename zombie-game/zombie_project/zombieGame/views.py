@@ -9,8 +9,10 @@ from engine.main import show_game_screen
 from engine.game import Game
 
 def index(request):
-    context_dict = {'boldmessage': "zzzzz"}
-    return render(request, 'zombieGame/base.html', context_dict)
+    if User.is_active:
+        return HttpResponseRedirect('/zombieGame/profile/')
+    else:
+        return HttpResponseRedirect('/zombieGame/login/')
 
 
 def login(request):

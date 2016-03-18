@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+{% extends "zombieGame/base.html" %}
 <html>
     <head>
 
         <title>login</title>
     </head>
+
+    {% block content %}
 
     <body>
         <h1>Login to play</h1>
@@ -23,4 +26,7 @@
     <a href="/zombieGame">Home</a>
 
     </body>
+
+    {% endblock content %}
+
 </html>

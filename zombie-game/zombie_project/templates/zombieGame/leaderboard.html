@@ -1,11 +1,14 @@
 <!doctype html>
-
+{% extends "zombieGame/base.html" %}
 <html lang="en">
 <head>
 	<h1 align="center">Leaderboard</h1>
 	<h3><a href="/zombieGame/">HomePage</a>
   <meta charset="utf-8">
   <title>Leaderboard</title>
+
+  {% block content %}
+
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -16,6 +19,8 @@
   });
   </script>
 </head>
+{% block bg %}
+{% endblock bg %}
 <body>
 
 <div id="tabs">
@@ -33,4 +38,7 @@
 
 
 </body>
+
+   {% endblock content %}
+
 </html>
