@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+	<head>
+		<title>Home</title>
+	</head>
+	
+	<style>
+	a {
+        padding: 14px 25px;
+		text-align: center;
+        position: fixed;
+        left: 100px;
+        #bottom: 100px;
+        border: 3px solid #000000;
+	}
+
+    div {
+        height: 200px;
+        width: 400px;
+    }
+	</style>
+	
+	<body background="{% static "images/homepage.jpg" %}">
+		#<h1 style="text-align:center;">Homepage</h1>
+
+        <div>
+		    <a style="bottom:100px" href="/zombieGame/login/">Login</a><br />
+            <a style="bottom:200px" href="/zombieGame/profile/">Profile</a><br />
+            <a style="bottom:300px"href="/zombieGame/leaderboard/">Leaderboard</a><br />
+
+        </div>
+	</body>
+
+</html>

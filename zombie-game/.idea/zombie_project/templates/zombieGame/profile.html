@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Profiles</title>
+	</head>
+        <h1 style="text-align:center;">Profiles Page</h1>
+        {% if user.is_authenticated %}
+        <h1>welcome back {{ user.username }}!</h1>
+        {% else %}
+        <h1>Sign in to view profile page</h1>
+        {% endif %}
+	
+	<body>
+
+		<a href="/zombieGame/">Play</a></br>
+		<a href="/zombieGame/leaderboard">Leaderboard</a></br>
+		<!--<a href="/profiles/badges/">Player Badges</a></br>
+		<a href="/profiles/status/">Player Status</a></br>-->
+	</body>
+
+</html>
