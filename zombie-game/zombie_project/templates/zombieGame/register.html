@@ -11,10 +11,10 @@
         <h1>Register to play</h1>
 
         {% if registered %}
-        <strong>thank you for registering!</strong>
-        <a href="/zombieGame/login/">Login and start playing</a><br />
+        <strong>Thank you for registering!</strong><br />
+        <a href="/zombieGame/login/">Login and start playing here!</a><br />
         {% else %}
-        <strong>register here!</strong><br />
+        <strong>Register below!</strong><br />
 
         <form id="user_form" method="post" action="/zombieGame/register/"
                 enctype="multipart/form-data">

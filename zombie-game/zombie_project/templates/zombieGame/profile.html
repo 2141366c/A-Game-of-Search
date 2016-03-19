@@ -9,21 +9,15 @@
 	{% block content %}
 
         <h1 style="text-align:center;">Profiles Page</h1>
-        {% if user.is_authenticated %}
-        <h1>welcome back {{ user.username }}!</h1>
-        {% else %}
-        <h1>Sign in to view profile page</h1>
-        {% endif %}
+
+        <h1>Welcome back {{ user.username }}!</h1>
+
 	
 	<body>
-	    {% if user.is_autheticated %}
-		<a href="/zombieGame/game/">Play</a></br>
-		{% else %}
-		<a href="/zombieGame/login/">Login</a></br>
-		{% endif %}
-		<a href="/zombieGame/leaderboard/">Leaderboard</a></br>
-		<!--<a href="/profiles/badges/">Player Badges</a></br>
-		<a href="/profiles/status/">Player Status</a></br>-->
+    Random text.<br />
+
+    <a href = "/zombieGame/logout/">Logout</a><br />
+
 	</body>
 
 	{% endblock content %}

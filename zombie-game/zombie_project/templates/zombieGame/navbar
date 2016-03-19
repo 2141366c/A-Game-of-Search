@@ -27,8 +27,8 @@
 
     <ul>
     <li><a href="/zombieGame/game/" >Play!</a></li>
-    <li><a href="/zombieGame/profile/" >Profiles</a></li>
-    <li><a href="/zombieGame/leaderboard/" >Leaderboards</a></li>
+    <li><a href="/zombieGame/profile/" >Profile</a></li>
+    <li><a href="/zombieGame/leaderboard/" >Leaderboard</a></li>
     <li><a href="/zombieGame/login/" >Logout</a></li>
     </ul>
 
