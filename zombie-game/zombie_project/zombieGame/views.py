@@ -75,6 +75,9 @@ def register(request):
             {'user_form': user_form, 'profile_form': profile_form, 'registered': registered} )
 
 def user_login(request):
+
+    loggedin = False
+
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -84,6 +87,7 @@ def user_login(request):
         if user:
             if user.is_active:
                 auth_login(request, user)
+                loggedin = True
                 return HttpResponseRedirect('/zombieGame/profile/')
             else:
                 return HttpResponse("Your account is disabled.")

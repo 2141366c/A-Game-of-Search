@@ -26,8 +26,33 @@
         padding: 10px;
     }
 
-    h1, a {
+    .white {
         color: white;
+    }
+
+    ul {
+        list-style-type: none;
+        width: 1320px;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: #333;
     }
 
 </style>
@@ -35,11 +60,20 @@
 <img class="displayed" src = "{% static "images/ZombieGameBanner.png" %}" alt = "Zombie Banner" />
 <body background = "{% static "images/homepage.jpg" %}" align = "middle"/>
 
-{% if user.is_authenticated %}
-{% block navbar %}{% endblock navbar %}
+
+
+<!--{% if loggedin %}
+
 {% else %}
-<!--<h1>It appears you are not logged in, </h1><a href="login.html">click here! </a><h1>to login.</h1>-->
-{% endif %}
+<h1 class="white">It appears you are not logged in, </h1><a href="login" class="white">click here! </a><h1 class="white">to login.</h1>
+{% endif %}-->
+
+    <ul>
+    <li><a href="/zombieGame/game/" >Play!</a></li>
+    <li><a href="/zombieGame/profile/" >Profile</a></li>
+    <li><a href="/zombieGame/leaderboard/" >Leaderboard</a></li>
+    <li><a href="/zombieGame/" >Logout</a></li>
+    </ul>
 
 <body>
 
