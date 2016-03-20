@@ -11,11 +11,15 @@
 </head>
 <body>
    {{ game }}  </br>
-       {{ street }} </br>
-           {% for house in house_list %}
-               <p>{{ house }}</p>
+       {{ street }}</br>
+           {% for t in turn %}
+               <p><a href="turn" >{{t}}</p>
            {% endfor %}
-   {{ contex_dict }}
+           {% for house in house_list %}
+               <p><a href="">{{ house }}</a></p>
+           {% endfor %}
+
+       {{ house }}
 
 
 </body>

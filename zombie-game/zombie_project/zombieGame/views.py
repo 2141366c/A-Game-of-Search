@@ -25,22 +25,28 @@ def profile(request):
     context_dict = {'boldmessage': "profile"}
     return render(request, 'zombieGame/profile.html', context_dict)
 
+#def start_game(request):
+
 def fill_dict(g):
     if g.game_state == 'STREET':
-        context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house()}
+        context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house(), 'turn': g.turn_options()}
+        return context_dict
 
-    #i = 0
-    #for i in g.street.house_list:
+    elif g.game_state == 'HOUSE':
+        context_dict = {'current_house': g.street.get_current_house(),'current_room': g.street.get_current_house().get_current_room()}
+        return context_dict
 
-     #   i += 1
-    return context_dict
 
 def game(request):
-
     g = Game()
     g.start_new_day()
     context_dict=fill_dict(g)
     return render(request, 'zombieGame/game.html', context_dict)
+
+def take_turn(user, action, value=None):
+    context_dict = {'user': user, 'turn': g.turn_option(), 'action':action}
+    return context_dict
+
 
 def leaderboard(request):
     context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10], 'survival_list': user.survival.objects.order_by('-days')[:10]}
