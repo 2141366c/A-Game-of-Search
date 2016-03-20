@@ -100,7 +100,6 @@ def show_zombie_template(g):
     current_room = g.street.get_current_house().get_current_room()
     print "zaarrrr rrrgh: {0} Zombies!!!!".format(current_room.zombies)
 
-
 def show_update_template(g):
 
     if g.update_state.party<0:
