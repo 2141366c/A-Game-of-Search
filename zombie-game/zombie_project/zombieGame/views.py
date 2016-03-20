@@ -33,10 +33,19 @@ def fill_dict(g):
         context_dict = {'current_house': g.street.get_current_house(),'current_room': g.street.get_current_house().get_current_room()}
         return context_dict
 
+    elif g.game_state == 'ZOMBIE':
+        context_dict = {'street': g.street, 'house_list': g.street.house_list,
+                        'current_house':g.street.get_current_house(),
+                        'current_room':g.street.get_current_house().get_current_room(),
+                        'zombies': g.street.get_current_house().current_room.zombies}
+        return context_dict
 
 
-#def take_turn(user, action, value=None):
+
+#def take_turn(user, turn, value=None):
  #   context_dict = {'user': user, 'turn': g.turn_option(), 'action':action}
+
+#    t = turn.SlugField()
   #  return context_dict
 
 
@@ -49,9 +58,9 @@ def game(request):
 
 @login_required
 def leaderboard(request):
-    context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10],
-                    'survival_list': user.survival.objects.order_by('-days')[:10]}
-    return render(request, 'zombieGame/leaderboard.html', context_dict)
+   # context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10],
+    #                'survival_list': user.survival.objects.order_by('-days')[:10]}
+    return render(request, 'zombieGame/leaderboard.html', {})
 
 def register(request):
 
