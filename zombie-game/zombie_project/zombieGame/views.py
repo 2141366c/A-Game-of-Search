@@ -27,19 +27,23 @@ def profile(request):
 
 def fill_dict(g):
     if g.game_state == 'STREET':
-        context_dict = {'street': g.street , 'house_list': g.street.house_list, 'current_house':g.street.get_current_house() }
+        context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house()}
+
+    #i = 0
+    #for i in g.street.house_list:
+
+     #   i += 1
     return context_dict
 
 def game(request):
+
     g = Game()
     g.start_new_day()
     context_dict=fill_dict(g)
     return render(request, 'zombieGame/game.html', context_dict)
 
 def leaderboard(request):
-    context_dict = {'boldmessage': "leaderboard"}
-    #kills_list = kills.objects.order_by('-kills')[:10]
-    #survival_list = survival.objects.order_by('-days')[:10]
+    context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10], 'survival_list': user.survival.objects.order_by('-days')[:10]}
     return render(request, 'zombieGame/leaderboard.html', context_dict)
 
 def register(request):
@@ -64,6 +68,10 @@ def register(request):
             if 'picture' in request.FILES:
                 profile.picture = request.FILES['picture']
 
+            profile.user.kills = 0
+
+            profile.user.survival = 0
+
             profile.save()
 
             registered = True
@@ -77,7 +85,7 @@ def register(request):
 
     return render(request,
             'zombieGame/register.html',
-            {'user_form': user_form, 'profile_form': profile_form, 'registered': registered} )
+            {'user_form': user_form, 'profile_form': profile_form, 'registered': registered, 'kills': kills, 'survival': survival} )
 
 def user_login(request):
 

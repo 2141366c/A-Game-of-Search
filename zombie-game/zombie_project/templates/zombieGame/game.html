@@ -12,6 +12,9 @@
 <body>
    {{ game }}  </br>
        {{ street }} </br>
+           {% for house in house_list %}
+               <p>{{ house }}</p>
+           {% endfor %}
    {{ contex_dict }}
 
 
