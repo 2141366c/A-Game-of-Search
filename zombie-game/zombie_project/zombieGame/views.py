@@ -25,11 +25,16 @@ def profile(request):
     context_dict = {'boldmessage': "profile"}
     return render(request, 'zombieGame/profile.html', context_dict)
 
+def fill_dict(g):
+    if g.game_state == 'STREET':
+        context_dict = {'street': g.street , 'house_list': g.street.house_list, 'current_house':g.street.get_current_house() }
+    return context_dict
+
 def game(request):
     g = Game()
     g.start_new_day()
-    response = show_game_screen(g)
-    return render(response, 'zombieGame/game.html', {})
+    context_dict=fill_dict(g)
+    return render(request, 'zombieGame/game.html', context_dict)
 
 def leaderboard(request):
     context_dict = {'boldmessage': "leaderboard"}
