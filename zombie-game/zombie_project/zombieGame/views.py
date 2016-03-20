@@ -26,25 +26,18 @@ def profile(request):
 
 def fill_dict(g):
     if g.game_state == 'STREET':
-<<<<<<< HEAD
         context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house(), 'turn': g.turn_options()}
         return context_dict
 
     elif g.game_state == 'HOUSE':
         context_dict = {'current_house': g.street.get_current_house(),'current_room': g.street.get_current_house().get_current_room()}
         return context_dict
-=======
-        context_dict = {'street': g.street, 'house_list': g.street.house_list,
-                        'current_house':g.street.get_current_house()}
 
-    if g.game_state == 'ZOMBIE':
-        context_dict = {'street': g.street, 'house_list': g.street.house_list,
-                        'current_house':g.street.get_current_house(),
-                        'current_room':g.street.get_current_house().get_current_room(),
-                        'zombies': g.street.get_current_house().current_room.zombies}
-    #i = 0
-    #for i in g.street.house_list:
->>>>>>> 775c4623dffff0a04df22baf6ea4d0634ca7a811
+
+
+#def take_turn(user, action, value=None):
+ #   context_dict = {'user': user, 'turn': g.turn_option(), 'action':action}
+  #  return context_dict
 
 
 @login_required
@@ -54,15 +47,7 @@ def game(request):
     context_dict=fill_dict(g)
     return render(request, 'zombieGame/game.html', context_dict)
 
-<<<<<<< HEAD
-def take_turn(user, action, value=None):
-    context_dict = {'user': user, 'turn': g.turn_option(), 'action':action}
-    return context_dict
-
-
-=======
 @login_required
->>>>>>> 775c4623dffff0a04df22baf6ea4d0634ca7a811
 def leaderboard(request):
     context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10],
                     'survival_list': user.survival.objects.order_by('-days')[:10]}
