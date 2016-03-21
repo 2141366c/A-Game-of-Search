@@ -31,16 +31,14 @@
   <div id="tabs-1">
     <p>WINNERS that survive !</p>
     {% for each in days %}
-      <p>{{ each }}</p>
+      <p>{{ each }}{{ each.days }}</p>
     {% endfor %}
+    
   </div>
   <div id="tabs-2">
     <p>Winners who kill zombies !</p>
     {% for each in kills %}
-      <p>{{ each }}</p>
-    {% endfor %}
-    {% for each in actualKills %}
-      <p>{{ each }}</p>
+       <p>{{ each }} {{ each.kills }}</p>
     {% endfor %}
 
   </div>
