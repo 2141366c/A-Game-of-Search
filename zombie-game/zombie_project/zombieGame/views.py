@@ -10,14 +10,16 @@ from django.contrib.auth.decorators import login_required
 from engine.main import show_game_screen
 from engine.game import Game
 
-
+#Homepage view
 def index(request):
     return render(request, 'zombieGame/index.html')
 
+#Login view
 def login(request):
     context_dict = {'boldmessage': "login"}
     return render(request, 'zombieGame/login.html', context_dict)
 
+#Profile view, requires user to be logged in
 @login_required
 def profile(request):
     context_dict = {'boldmessage': "profile"}
@@ -26,6 +28,8 @@ def profile(request):
 #def start_game(request):
 
 #need to add ammo, partysize, days
+
+#In this view we create a context_dict variable, which we can alter what is outputted to the game.html
 def fill_dict(g):
 
     g.game_state == 'HOUSE'
@@ -63,6 +67,7 @@ def turn(user, turn, value=None):
         return context_dict
     #not working
 
+#The main game view, requires user to be logged in
 @login_required
 def game(request):
     g = Game()
@@ -70,12 +75,14 @@ def game(request):
     context_dict=fill_dict(g)
     return render(request, 'zombieGame/game.html', context_dict)
 
+#Leaderboards view, requires user to be logged in
 @login_required
 def leaderboard(request):
    # context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10],
     #                'survival_list': user.survival.objects.order_by('-days')[:10]}
     return render(request, 'zombieGame/leaderboard.html', {})
 
+#Register view
 def register(request):
 
     registered = False
@@ -117,6 +124,7 @@ def register(request):
             'zombieGame/register.html',
             {'user_form': user_form, 'profile_form': profile_form, 'registered': registered} )
 
+#Login view
 def user_login(request):
 
     loggedin = False
@@ -141,6 +149,7 @@ def user_login(request):
     else:
         return render(request, 'zombieGame/login.html', {})
 
+#Logout view
 @login_required
 def user_logout(request):
     logout(request)
