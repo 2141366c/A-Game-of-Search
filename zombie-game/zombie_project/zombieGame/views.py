@@ -23,17 +23,16 @@ def login(request):
 #Profile view, requires user to be logged in
 @login_required
 def profile(request):
-    context_dict = {'boldmessage': "profile"}
-    return render(request, 'zombieGame/profile.html', context_dict)
-
+    context = RequestContext(request)
+    profile = request.user.userprofile
+    context_dict = {'profile': profile}
+    return render_to_response('zombieGame/profile.html', context_dict, context)
 #def start_game(request):
 
 #need to add ammo, partysize, days
 
 #In this view we create a context_dict variable, which we can alter what is outputted to the game.html
 def fill_dict(g):
-
-    g.game_state == 'HOUSE'
 
     if g.game_state == 'STREET':
         context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house(), 'turn': g.turn_options(),
@@ -47,7 +46,7 @@ def fill_dict(g):
 
 
     elif g.game_state == 'HOUSE':
-        context_dict = {'current_house': g.street.get_current_house(),'current_room': g.street.get_current_house().get_current_room()}
+        context_dict = {'house': g.street.get_current_house(),'room': g.street.get_current_house().get_current_room()}
         return context_dict
 
     elif g.game_state == 'ZOMBIE':
@@ -57,8 +56,6 @@ def fill_dict(g):
                         'zombies': g.street.get_current_house().current_room.zombies}
         return context_dict
 
-def wait(request):
-    return game(request)
 
 def turn(user, turn, value=None):
     if g.take_turn(turn) == 'WAIT':
