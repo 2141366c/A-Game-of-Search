@@ -25,7 +25,10 @@ def login(request):
 def profile(request):
     context = RequestContext(request)
     profile = request.user.userprofile
-    context_dict = {'profile': profile}
+    kills = request.user.userprofile.kills
+    days = request.user.userprofile.days
+    people = request.user.userprofile.people
+    context_dict = {'profile': profile, 'kills': kills,'days': days, 'people':people}
     return render_to_response('zombieGame/profile.html', context_dict, context)
 #def start_game(request):
 
