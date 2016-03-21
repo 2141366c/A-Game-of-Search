@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 # do we put badges in here ??? :S
+# TRYING TO SLUG ACTIONS. MAYBE NEED TO MAKE A VIEW FOR THEM
 
 class UserProfile(models.Model):
     # This line is required. Links UserProfile to a User model instance.
@@ -20,3 +21,17 @@ class UserProfile(models.Model):
 
     def __unicode__(self):
         return self.user.username
+
+#class Fill_dict(models.Model):
+ #   turn = models.CharField(max_length=30)
+  #  s = models.SlugField(editable=True)
+
+   # def save(self):
+    #    if not self.id:
+     #       self.s = slugify(self.options)
+
+      #  super(turn, self).save()
+
+ #   def __unicode__(self):
+  #             return self.options
+

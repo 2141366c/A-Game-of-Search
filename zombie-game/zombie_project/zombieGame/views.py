@@ -10,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 from engine.main import show_game_screen
 from engine.game import Game
 
+
 def index(request):
     return render(request, 'zombieGame/index.html')
 
@@ -27,9 +28,17 @@ def profile(request):
 #need to add ammo, partysize, days
 def fill_dict(g):
 
+    g.game_state == 'HOUSE'
+
     if g.game_state == 'STREET':
-        context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house(), 'turn': g.turn_options()}
+        context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house(), 'turn': g.turn_options(),
+                        'house_num': ['house_no']}
         return context_dict
+
+        i=0
+        for i in g.street.house_list:
+            context_dict['house_no'].append(i)
+            i += 1
 
 
     elif g.game_state == 'HOUSE':

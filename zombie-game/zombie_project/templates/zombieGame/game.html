@@ -11,15 +11,14 @@
 </head>
 <body>
    {{ game }}  </br>
-       {{ street }}
+       {{street}}
            {% for t in turn %}
-                   <p><a href={{t}} >{{t}}</p>
+                   <p><a href={{t}}/{{house_num}} >{{t}}</p>
            {% endfor %}
            {% for house in house_list %}
                <p><a href="{{house}}">{{ house }}</a></p>
            {% endfor %}
-
-       {{ house }}
+       {{house}}
 
 
 </body>
