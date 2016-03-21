@@ -106,7 +106,6 @@ def register(request):
                 profile.picture = request.FILES['picture']
 
             # profile.user.kills = 0
-            #
             # profile.user.survival = 0
 
             profile.save()
@@ -127,8 +126,6 @@ def register(request):
 #Login view
 def user_login(request):
 
-    loggedin = False
-
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -138,7 +135,6 @@ def user_login(request):
         if user:
             if user.is_active:
                 auth_login(request, user)
-                loggedin = True
                 return HttpResponseRedirect('/zombieGame/profile/')
             else:
                 return HttpResponse("Your account is disabled.")
