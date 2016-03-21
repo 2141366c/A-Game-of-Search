@@ -13,10 +13,10 @@
    {{ game }}  </br>
        {{ street }}
            {% for t in turn %}
-               <p><a href="turn" >{{t}}</p>
+                   <p><a href={{t}} >{{t}}</p>
            {% endfor %}
            {% for house in house_list %}
-               <p><a href="">{{ house }}</a></p>
+               <p><a href="{{house}}">{{ house }}</a></p>
            {% endfor %}
 
        {{ house }}

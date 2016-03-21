@@ -24,10 +24,13 @@ def profile(request):
 
 #def start_game(request):
 
+#need to add ammo, partysize, days
 def fill_dict(g):
+
     if g.game_state == 'STREET':
         context_dict = {'street': g.street, 'house_list': g.street.house_list, 'current_house':g.street.get_current_house(), 'turn': g.turn_options()}
         return context_dict
+
 
     elif g.game_state == 'HOUSE':
         context_dict = {'current_house': g.street.get_current_house(),'current_room': g.street.get_current_house().get_current_room()}
@@ -40,14 +43,16 @@ def fill_dict(g):
                         'zombies': g.street.get_current_house().current_room.zombies}
         return context_dict
 
+def wait(request):
+    return game(request)
 
-
-#def take_turn(user, turn, value=None):
- #   context_dict = {'user': user, 'turn': g.turn_option(), 'action':action}
-
-#    t = turn.SlugField()
-  #  return context_dict
-
+def turn(user, turn, value=None):
+    if g.take_turn(turn) == 'WAIT':
+        return game(request)
+    elif g.take_turn(turn) == 'ENTER':
+        context_dict = {'user': user }
+        return context_dict
+    #not working
 
 @login_required
 def game(request):
