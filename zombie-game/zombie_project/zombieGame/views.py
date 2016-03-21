@@ -1,6 +1,7 @@
 import user
+from models import UserProfile
 from django.shortcuts import render, render_to_response
-from zombieGame.forms import UserForm, UserProfileForm
+from forms import UserForm, UserProfileForm
 from django.contrib.auth import authenticate, logout
 from django.contrib.auth import login as auth_login
 from django.http import HttpResponseRedirect, HttpResponse
@@ -78,9 +79,10 @@ def game(request):
 #Leaderboards view, requires user to be logged in
 @login_required
 def leaderboard(request):
-   # context_dict = {'kills_list': user.kills.objects.order_by('-kills')[:10],
-    #                'survival_list': user.survival.objects.order_by('-days')[:10]}
-    return render(request, 'zombieGame/leaderboard.html', {})
+     kills = UserProfile.objects.order_by('-kills')[:10]
+     days = UserProfile.objects.order_by('-days')[:10]
+     context_dict = {'kills':kills, 'days':days}
+     return render(request, 'zombieGame/leaderboard.html', context_dict)
 
 #Register view
 def register(request):

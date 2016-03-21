@@ -30,9 +30,15 @@
   </ul>
   <div id="tabs-1">
     <p>WINNERS that survive !</p>
+    {% for each in days %}
+      <p>{{ each }}</p>
+    {% endfor %}
   </div>
   <div id="tabs-2">
     <p>Winners who kill zombies !</p>
+    {% for each in kills %}
+      <p>{{ each }}</p>
+    {% endfor %}
   </div>
 </div>
 
