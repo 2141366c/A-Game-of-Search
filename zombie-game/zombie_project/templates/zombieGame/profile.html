@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 {% extends "zombieGame/base.html" %}
+
+{% load staticfiles %}
 <html xmlns="http://www.w3.org/1999/html">
 
 	<head>
@@ -14,8 +16,9 @@
 	
 	<body>
 	{{ profile }}</br>
-	<p>Best Kills: </p>{{profile.kills}}</br>
-	<p>Survival: </p>{{profile.days}}</br>
+	<img src="{% static "{{picture}}" %}" alt = "Profile Picture" height="100" width="100" />
+	<p>Best Kills: </p>{{profile.kills}}
+	<p>Survival: </p>{{profile.days}}
 	<P>Most friends: </P>{{profile.people}}</br>
 	</body>
     <a href = "/zombieGame/logout/">Logout</a><br />
