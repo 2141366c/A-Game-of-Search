@@ -79,9 +79,10 @@ def game(request):
 #Leaderboards view, requires user to be logged in
 @login_required
 def leaderboard(request):
+     actualKills = UserProfile.objects('-kills')[:10]
      kills = UserProfile.objects.order_by('-kills')[:10]
      days = UserProfile.objects.order_by('-days')[:10]
-     context_dict = {'kills':kills, 'days':days}
+     context_dict = {'killNumber':actualKills, 'kills':kills, 'days':days}
      return render(request, 'zombieGame/leaderboard.html', context_dict)
 
 #Register view
