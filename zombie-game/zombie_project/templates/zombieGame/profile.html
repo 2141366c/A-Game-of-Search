@@ -13,13 +13,16 @@
 
 	
 	<body>
-	{{ profile }}</br>
-	<p>Best Kills: </p>{{profile.kills}}</br>
-	<p>Survival: </p>{{profile.days}}</br>
-	<P>Most friends: </P>{{profile.people}}</br>
-	</body>
-    <a href = "/zombieGame/logout/">Logout</a><br />
+	<h2>Here are your stats:</h2>
+    <!-- Displaying stats-->
+        <p>Kills: {{profile.kills}}</p>
+	    <p>Days: {{profile.days}}</p>
+	    <P>People:{{profile.people}}</p>
+        <P>Food: {{profile.food}}</p>
+        <P>Ammo: {{profile.ammo}}</p>
+        <P>Time: {{profile.time}}</p>
 
+	<a href="/zombieGame/logout/">Logout</a><br />
 	</body>
 
 	{% endblock content %}

@@ -24,12 +24,16 @@ def login(request):
 @login_required
 def profile(request):
     context = RequestContext(request)
-    profile = request.user.userprofile
-    kills = request.user.userprofile.kills
     days = request.user.userprofile.days
+    kills = request.user.userprofile.kills
     people = request.user.userprofile.people
-    context_dict = {'profile': profile, 'kills': kills,'days': days, 'people':people}
-    return render_to_response('zombieGame/profile.html', context_dict, context)
+    food = request.user.userprofile.food
+    ammo = request.user.userprofile.ammo
+    time = request.user.userprofile.time
+    profile = request.user.userprofile
+    context_dict = {'profile': profile, 'days': days, 'kills': kills, 'people': people,
+                    'food': food,'ammo': ammo, 'time': time}
+    return render(request, 'zombieGame/profile.html', context_dict)
 #def start_game(request):
 
 #need to add ammo, partysize, days
