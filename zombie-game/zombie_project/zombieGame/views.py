@@ -27,9 +27,13 @@ def profile(request):
     days = request.user.userprofile.days
     kills = request.user.userprofile.kills
     people = request.user.userprofile.people
-    picture = request.user.userprofile.picture
-    context_dict = {'profile': profile, 'kills': kills,'days': days, 'people':people, 'picture':picture}
-    return render_to_response('zombieGame/profile.html', context_dict, context)
+    food = request.user.userprofile.food
+    ammo = request.user.userprofile.ammo
+    time = request.user.userprofile.time
+    profile = request.user.userprofile
+    context_dict = {'profile': profile, 'days': days, 'kills': kills, 'people': people,
+                    'food': food,'ammo': ammo, 'time': time}
+    return render(request, 'zombieGame/profile.html', context_dict)
 
 
 #need to add ammo, partysize, days

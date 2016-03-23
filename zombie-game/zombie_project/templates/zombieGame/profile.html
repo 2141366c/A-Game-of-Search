@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 {% extends "zombieGame/base.html" %}
-<<<<<<< HEAD
 
 {% load static %}
 {% load media %)
-=======
-{% load staticfiles %}
->>>>>>> 69522c8a377a3c6ccb21eb9c862c2fa9fef99fdd
 <html xmlns="http://www.w3.org/1999/html">
 
 	<head>
@@ -34,23 +30,10 @@
         <div class="col-sm-4 col-md-4 ">
 		 <button type="button" class="btn btn-default"><a href = "/zombieGame/logout/">LOGOUT</button>
 
-<<<<<<< HEAD
 
     </div>
 </div>
-=======
-	<body>
-	User Name: {{ profile }}</br>
-	<img src="{% static "{{profile.picture}}" %}" alt = "Profile Picture" height="100" width="100" />
 
-	<p><b>Here are your stats:</b></p>
-    <!-- Displaying stats-->
-        <p>Kills: {{profile.kills}}</p>
-	    <p>Days: {{profile.days}}</p>
-	    <P>People:{{profile.people}}</p>
->>>>>>> 69522c8a377a3c6ccb21eb9c862c2fa9fef99fdd
-
-	<a href="/zombieGame/logout/">Logout</a><br />
 	</body>
 
 	{% endblock content %}
