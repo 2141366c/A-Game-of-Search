@@ -23,12 +23,28 @@
             <blockquote>
                 <p>User name: {{profile}}</p>
             </blockquote>
-                <br/> <p><i class="glyphicon glyphicon-fire"></i>Best Kills:{{profile.kills}}
-                <br/> <p><i class="glyphicon glyphicon-globe"></i>Survival:{{profile.days}}
-                <br/> <p><i class="glyphicon glyphicon-user"></i>Most friends:{{profile.people}}
+                <br/> <p><i class="glyphicon glyphicon-fire"></i>Best Kills: {{profile.kills}} kills
+                <br/> <p><i class="glyphicon glyphicon-globe"></i>Survival: {{profile.days}} days
+                <br/> <p><i class="glyphicon glyphicon-user"></i>Most friends: {{profile.people}} people
         </div>
         <div class="col-sm-4 col-md-4 ">
-		 <button type="button" class="btn btn-default"><a href = "/zombieGame/logout/">LOGOUT</button>
+            {% if profile.survivorBadge %}
+            Survivor Badge achieved! (30 days+ alive)<br />
+            {% endif %}
+
+            {% if profile.killerBadge %}
+            Killer Badge achieved! (50+ kills)<br />
+            {% endif %}
+
+            {% if profile.staminaBadge %}
+            Stamina Badge achieved! (80+ food) <br />
+            {% endif %}
+
+            {% if profile.partyBadge %}
+            Party Badge achieved! (40+ people) <br />
+            {% endif %}
+
+            <button type="button" class="btn btn-default"><a href = "/zombieGame/logout/">LOGOUT</button>
 
 
     </div>

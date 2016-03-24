@@ -14,10 +14,10 @@ class UserProfile(models.Model):
     food = models.IntegerField(default = 3)
     ammo = models.IntegerField(default = 2)
     time = models.IntegerField(default = 100)
-    survivorBadge = models.IntegerField(default = 0)
-    killerBadge = models.IntegerField(default = 0)
-    staminaBadge = models.IntegerField(default = 0)
-    partyBadge = models.IntegerField(default = 0)
+    survivorBadge = models.BooleanField(default = False)
+    killerBadge = models.BooleanField(default = False)
+    staminaBadge = models.BooleanField(default = False)
+    partyBadge = models.BooleanField(default = False)
 
     def __unicode__(self):
         return self.user.username
