@@ -181,7 +181,8 @@ def leaderboard(request):
      num = [1,2,3,4,5,6,7,8,9,10]
      kills = UserProfile.objects.order_by('-kills')[:10]
      days = UserProfile.objects.order_by('-days')[:10]
-     context_dict = {'index':num, 'kills':kills, 'days':days}
+     people = UserProfile.objects.order_by('-people')[:10]
+     context_dict = {'index':num, 'kills':kills, 'days':days, 'people':people,}
      return render(request, 'zombieGame/leaderboard.html', context_dict)
 
 #Register view
