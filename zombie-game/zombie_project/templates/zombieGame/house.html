@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% extends "zombieGame/base.html" %}
+
 <html lang="en">
 
 {% load staticfiles %}
@@ -15,8 +16,9 @@
 
     <B>Player </b> Party size: {{party}}, Food: {{food}}, Ammo: {{ammo}}, Kills: {{kills}}, Time left in day: {{time}} </br>
 
-       {{current_house}}</br>
-       {{current_room}}</br>
+        {{current_house}}</br>
+        This {{current_room}}</br>
+
 
 <a href="/zombieGame/game/">EXIT!</a><br />
 
