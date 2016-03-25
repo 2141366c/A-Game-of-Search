@@ -22,23 +22,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zombieGame/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+=======
+              <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+              <folding />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/zombieGame/profile.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+=======
+            <state vertical-scroll-proportion="0.36231884">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zombieGame/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
               <folding />
             </state>
           </provider>
@@ -50,7 +70,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/templates/zombieGame/register.html" />
-        <option value="$PROJECT_DIR$/zombieGame/models.py" />
         <option value="$PROJECT_DIR$/zombie_project/settings.py" />
         <option value="$PROJECT_DIR$/zombieGame/urls.py" />
         <option value="$PROJECT_DIR$/templates/zombieGame/navbar" />
@@ -58,6 +77,7 @@
         <option value="$PROJECT_DIR$/templates/zombieGame/login.html" />
         <option value="$PROJECT_DIR$/zombieGame/engine/main.py" />
         <option value="$PROJECT_DIR$/templates/zombieGame/base.html" />
+        <option value="$PROJECT_DIR$/zombieGame/models.py" />
         <option value="$PROJECT_DIR$/zombieGame/views.py" />
         <option value="$PROJECT_DIR$/templates/zombieGame/profile.html" />
       </list>
@@ -170,6 +190,10 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
       <pane id="Scratches" />
     </panes>
   </component>
@@ -384,8 +408,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
     <editor active="false" />
+=======
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1932246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -428,16 +457,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/zombieGame/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+=======
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
           <folding />
         </state>
       </provider>
@@ -446,9 +483,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,14 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zombieGame/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5492372">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zombieGame/engine/streetfactory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.86130375">
@@ -653,24 +680,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2231884">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/zombieGame/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
+<<<<<<< HEAD
+=======
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zombieGame/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+          <folding />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zombieGame/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+=======
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/zombieGame/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.36231884">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+>>>>>>> b964b538604169cf344a4a10f75fbd4004a2f9da
         </state>
       </provider>
     </entry>

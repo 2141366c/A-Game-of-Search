@@ -24,7 +24,6 @@ def login(request):
 #Profile view, requires user to be logged in
 @login_required
 def profile(request):
-    context = RequestContext(request)
     days = request.user.userprofile.days
     kills = request.user.userprofile.kills
     people = request.user.userprofile.people
@@ -32,6 +31,19 @@ def profile(request):
     ammo = request.user.userprofile.ammo
     time = request.user.userprofile.time
     profile = request.user.userprofile
+
+    if profile.days > 30:
+        profile.survivorBadge = True
+
+    if profile.kills > 50:
+        profile.killerBadge = True
+
+    if profile.food > 80:
+        profile.staminaBadge = True
+
+    if profile.people > 40:
+        profile.partyBadge = True
+
     context_dict = {'profile': profile, 'days': days, 'kills': kills, 'people': people,
                     'food': food,'ammo': ammo, 'time': time}
     return render(request, 'zombieGame/profile.html', context_dict)
