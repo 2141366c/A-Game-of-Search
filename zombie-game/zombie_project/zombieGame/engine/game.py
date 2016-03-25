@@ -193,7 +193,7 @@ class Game(object):
 
         if selected:
             current_room = self.street.get_current_house().get_current_room()
-            #print current_room
+            print current_room
             if current_room.zombies > 0:
                 self.game_state = 'ZOMBIE'
             else:

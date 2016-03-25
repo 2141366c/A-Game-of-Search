@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "zombieGame/base.html" %}
+<html lang="en">
+
+{% load staticfiles %}
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZOMBIE</title>
+
+</head>
+<body>
+
+    <B>Player </b> Party size: {{party}}, Food: {{food}}, Ammo: {{ammo}}, Kills: {{kills}}, Time left in day: {{time}} </br>
+
+       {{current_house}}</br>
+       {{current_room}}</br>
+
+<a href="/zombieGame/game/">EXIT!</a><br />
+
+</body>
+
+{% endblock content %}
+
+</html>

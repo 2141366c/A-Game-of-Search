@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% extends "zombieGame/base.html" %}
-<html lang="en">
+<html lang="en" xmlns:text-align="http://www.w3.org/1999/xhtml">
 
 {% load staticfiles %}
 
@@ -13,17 +13,14 @@
 </head>
 <body>
    {{ game }}  </br>
-       {{street}}
-           {% for t in turn %}
-                   <p><a href={{t}}>{{t}}</p>
-           {% endfor %}
+        <B>Player </b> Party size: {{party}}, Food: {{food}}, Ammo: {{ammo}}, Kills: {{kills}}, Time left in day: {{time}} </br>
+       {{street}}</br>
            {% for house in house_list %}
-               <p><a href="house"><img src="{% static "images/2house.jpg" %}" alt = "House" /></a></p>
+                <a href="/zombieGame/house/">
+                <img src="{% static "images/lhouse.jpeg" %}" alt=house />
+                </a>
            {% endfor %}
-       {{house}}
-            {% for room in house %}
-                <p><a href="room">{{room}}</a>
-            {% endfor %}
+
 
 
 
