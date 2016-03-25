@@ -1,5 +1,8 @@
 <!doctype html>
 {% extends "zombieGame/base.html" %}
+
+<html xmlns="http://www.w3.org/1999/html">
+
 <html lang="en">
 <head>
 	<h1 align="center">Leaderboard</h1>
@@ -29,27 +32,90 @@
   <ul>
     <li><a href="#tabs-1">Survivors</a></li>
     <li><a href="#tabs-2">Killers</a></li>
+    <li><a href="#tabs-3">Party</a></li>
   </ul>
+
   <div id="tabs-1">
     <p>Most days spend alive!</p>
     <hr>
-    {% for each in days  %}
-      <p>  {{ each }}  {{ each.days }}</p>
-      <hr>
-
-    {% endfor %}
-    
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-1">
+                {% for each in index %}
+                    {{ each }}
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="col-xs-5">
+                {% for each in days  %}
+                    {{ each }}
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="col-xs-6">
+                {% for each in days  %}
+                    {{ each.days }}
+                    <hr>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
   </div>
+
   <div id="tabs-2">
     <p>Most zombies killed!</p>
     <hr>
-
-    {% for each in kills %}
-       <p> {{ each }}  {{ each.kills }}</p>
-       <hr>
-    {% endfor %}
-    
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-1">
+                {% for each in index %}
+                    {{ each }}
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="col-xs-5">
+                {% for each in kills  %}
+                    {{ each }}
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="col-xs-6">
+                {% for each in kills  %}
+                    {{ each.kills }}
+                    <hr>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
   </div>
+
+  <div id="tabs-3">
+    <p>Largest party size!</p>
+    <hr>
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-1">
+                {% for each in index %}
+                    {{ each }}
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="col-xs-5">
+                {% for each in people  %}
+                    {{ each }}
+                    <hr>
+                {% endfor %}
+            </div>
+            <div class="col-xs-6">
+                {% for each in people  %}
+                    {{ each.people }}
+                    <hr>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+  </div>
+
 </div>
 
 
