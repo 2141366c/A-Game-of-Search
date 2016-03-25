@@ -16,6 +16,10 @@ import pickle
 def index(request):
     return render(request, 'zombieGame/index.html')
 
+#About page view
+def about(request):
+    return render(request, 'zombieGame/about.html')
+
 #Login view
 def login(request):
     context_dict = {'boldmessage': "login"}
