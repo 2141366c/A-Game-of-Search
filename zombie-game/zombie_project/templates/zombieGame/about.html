@@ -1,0 +1,28 @@
+{% extends "zombieGame/base.html" %}
+
+{% load static %}
+{% load media %)
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+{% block content %}
+
+<h1>
+    About
+</h1>
+
+<body>
+    <h3>
+        <p><span class="glyphicon glyphicon-envelope"></span> A player starts on day one of the zombie apocalypse.<p/>
+        <p>Their goal is to survive as long as possible (i.e. number of days). <span class="glyphicon glyphicon-tint"></span><p/>
+        <p><span class="glyphicon glyphicon-plus-sign"></span> Their party size is 1. They have 3 units of food and 2 units of ammunition.<p/>
+        <p>They enter a street. A street contains a number of houses. Each house has a number of rooms.<span class="glyphicon glyphicon-leaf"></span><p/>
+        <p><span class="glyphicon glyphicon-plane"></span> A room may contain other survivors, zombies, food and/or ammunition.<p/>
+        <p>The player has a number of moves available to them, depending on where they are.<span class="glyphicon glyphicon-wrench"></span><p/>
+        <p><span class="glyphicon glyphicon-thumbs-up"></span> Badges are rewarded to players who demonstrates a high level of play through <br />
+            achieving extraordinary game results.</p>
+    </h3>
+</body>
+
+{% endblock content %}
